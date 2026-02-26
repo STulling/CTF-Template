@@ -1,0 +1,5 @@
+services:
+  online_challenge:
+    build: ./online_challenge
+    ports:
+      - "8080:80"
