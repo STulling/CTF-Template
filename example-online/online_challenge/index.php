@@ -3,6 +3,6 @@
     <title>Online challenge</title>
 </head>
 <body>
-    Here's the flag: FLAG{Test_Challenge}
+    Hmm... where would the flag be?
 </body>
 </html>

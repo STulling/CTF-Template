@@ -2,7 +2,7 @@ name: Online challenge
 category: Web
 is_http: true
 ctfd:
-  type: dynamic_iac
+  type: dynamic_iac # Ignore
   slug: online_challenge
   tags:
     - easy
@@ -11,13 +11,13 @@ ctfd:
       - online_challenge/
       - docker-compose.yml
   flags:
-    - content: FLAG{Test_Challenge}
+    - content: FLAG{Nice_Job_Finding_The_Flag}
       type: static # Ignore
   challenge:
     description: |
       I hope you won't find the flag toooo easily 
-    state: visible # Ignore
     attribution: Testuser
+    state: visible # Ignore
     initial: 500 # Ignore
     minimum: 100 # Ignore
     decay: 50 # Ignore
@@ -27,4 +27,4 @@ ctfd:
     min: 10  # Ignore
     max: 100 # Ignore
     additional:  # Ignore
-      env.FLAG: "FLAG{Test_Challenge}" # Use this if you want to inject the flag as an environment variable into the container. You can then access it in your application code.
+      env.FLAG: "FLAG{Nice_Job_Finding_The_Flag}" # Use this if you want to inject the flag as an environment variable into the container. You can then access it in your application code.

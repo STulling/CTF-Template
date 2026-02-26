@@ -14,5 +14,5 @@ ctfd:
   challenge:
     description: |
       Wow, can you find the flag????
-    state: visible
+    state: visible # Ignore
     attribution: Testuser
