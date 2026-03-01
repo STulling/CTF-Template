@@ -1,0 +1,31 @@
+name: Multicontainer challenge
+category: Web
+is_http: true
+ctfd:
+  type: dynamic_iac
+  slug: multicontainer-challenge
+  tags:
+    - easy
+  bundle:
+    include:
+      - frontend/
+      - backend/
+      - docker-compose.yml
+  flags:
+    - content: FLAG{wow_multiple_containers}
+      type: static
+  challenge:
+    description: |
+      Wow, we do multiple containers too :)
+    state: visible
+    attribution: TestUser
+    initial: 500
+    minimum: 50
+    decay: 50
+  dynamic_iac:
+    timeout: 1800
+    mana_cost: 0
+    min: 10 
+    max: 100 
+    additional:
+      env.FLAG: "FLAG{wow_multiple_containers}"

@@ -1,0 +1,5 @@
+services:
+  pyjail:
+    build: ./tcp_chall
+    ports:
+      - "1337"

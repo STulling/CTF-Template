@@ -1,0 +1,9 @@
+services:
+  entry-multicontainer-frontend: # The serice that starts with "entry-" will be set as the entrypoint
+    build: ./frontend
+    ports:
+      - "5000"
+  multicontainer-backend:
+    build: ./backend
+    ports:
+      - "5001"

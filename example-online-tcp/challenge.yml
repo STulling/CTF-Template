@@ -1,0 +1,27 @@
+name: TCP challenge
+category: Misc
+ctfd:
+  type: dynamic_iac
+  slug: tcp_challenge
+  tags:
+    - easy
+  bundle:
+    include:
+      - tcp_chall/
+      - docker-compose.yml
+  flags:
+    - content: FLAG{epic_flag}
+      type: static
+  challenge:
+    description: |
+      Test TCP challenge
+    state: visible
+    attribution: TestUser
+    initial: 500
+    minimum: 100
+    decay: 50
+  dynamic_iac:
+    timeout: 1800
+    mana_cost: 0
+    additional:
+      env.FLAG: "FLAG{epic_flag}"
